@@ -1,0 +1,7 @@
+services:
+  app:
+    image: ghcr.io/proapi-hub/prolab:latest
+    container_name: prolab
+    ports:
+      - "3000:3000"
+    restart: unless-stopped

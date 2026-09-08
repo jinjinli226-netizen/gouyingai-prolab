@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "id": "reconstruction:video:Phoyg-JRsAWdOVdlQhn_0",
+  "sourceVideoId": "video:Phoyg-JRsAWdOVdlQhn_0",
+  "durationSeconds": 8.033333,
+  "aspectRatio": "9:16",
+  "entities": [
+    {
+      "id": "source-entity-1",
+      "placeholderId": "@entity1",
+      "kind": "other",
+      "identityFacts": "Anthropomorphic cut of raw marbled red beef with stubby humanoid arms and legs.",
+      "behavioralRole": "Strains, crouches, and deposits a steak slice into a skillet before standing upright.",
+      "evidenceIds": ["storyboard-1"],
+      "confidence": 0.98
+    },
+    {
+      "id": "source-entity-2",
+      "placeholderId": "@entity2",
+      "kind": "prop",
+      "identityFacts": "Black cast-iron skillet resting on a rustic wooden countertop.",
+      "behavioralRole": "Receives and heats the deposited raw steak slice.",
+      "evidenceIds": ["storyboard-1"],
+      "confidence": 0.95
+    },
+    {
+      "id": "source-entity-3",
+      "placeholderId": "@entity3",
+      "kind": "prop",
+      "identityFacts": "Thick, round raw marbled beef steak slice.",
+      "behavioralRole": "Emerges from @entity1 and lands in @entity2 to sizzle.",
+      "evidenceIds": ["storyboard-1"],
+      "confidence": 0.95
+    },
+    {
+      "id": "source-entity-4",
+      "placeholderId": "@entity4",
+      "kind": "scene",
+      "identityFacts": "Rustic kitchen counter with a warm glowing stone hearth and hanging copper pots.",
+      "behavioralRole": "Static setting for the action.",
+      "evidenceIds": ["storyboard-1"],
+      "confidence": 0.95
+    }
+  ],
+  "timelineUnits": [
+    {
+      "id": "unit-1",
+      "sourceStartSeconds": 0,
+      "sourceEndSeconds": 2.678,
+      "parentShotIndex": 0,
+      "direction": "Static medium shot. Anthropomorphic beef creature stands behind a cast-iron skillet, crouching and straining.",
+      "placeholderIds": ["@entity1", "@entity2", "@entity4"],
+      "evidenceIds": ["storyboard-1"],
+      "boundaryAfter": "semantic",
+      "safeContinuationPoints": [
+        {
+          "atSeconds": 2.008,
+          "continuity": {
+            "entities": "@entity1 crouched deeply with arms tensed",
+            "objects": "@entity2 empty on wooden counter",
+            "camera": "Static eye-level medium vertical framing",
+            "audio": "Ambient kitchen fire crackle"
+          }
+        }
+      ],
+      "startContinuity": {
+        "entities": "@entity1 standing upright on wooden surface",
+        "objects": "Empty @entity2 on wooden counter",
+        "camera": "Static eye-level vertical shot",
+        "audio": "Ambient room tone"
+      },
+      "endContinuity": {
+        "entities": "@entity1 bent forward and straining over pan rim",
+        "objects": "@entity2 empty in foreground",
+        "camera": "Static eye-level vertical shot",
+        "audio": "Ambient room tone"
+      }
+    },
+    {
+      "id": "unit-2",
+      "sourceStartSeconds": 2.678,
+      "sourceEndSeconds": 5.356,
+      "parentShotIndex": 0,
+      "direction": "Creature straightens partially as a raw beef steak slice emerges from its base directly into the skillet.",
+      "placeholderIds": ["@entity1", "@entity2", "@entity3", "@entity4"],
+      "evidenceIds": ["storyboard-1"],
+      "boundaryAfter": "semantic",
+      "safeContinuationPoints": [
+        {
+          "atSeconds": 4.017,
+          "continuity": {
+            "entities": "@entity1 standing tall with steak partially extruded",
+            "objects": "@entity3 tipping into @entity2",
+            "camera": "Static eye-level medium vertical framing",
+            "audio": "Ambient room tone and soft thud"
+          }
+        }
+      ],
+      "startContinuity": {
+        "entities": "@entity1 straining over the skillet",
+        "objects": "@entity3 starting to emerge from base of @entity1",
+        "camera": "Static eye-level vertical shot",
+        "audio": "Ambient room tone"
+      },
+      "endContinuity": {
+        "entities": "@entity1 standing fully detached behind skillet",
+        "objects": "@entity3 lying flat inside @entity2",
+        "camera": "Static eye-level vertical shot",
+        "audio": "Initial sizzle sound"
+      }
+    },
+    {
+      "id": "unit-3",
+      "sourceStartSeconds": 5.356,
+      "sourceEndSeconds": 8.033333,
+      "parentShotIndex": 0,
+      "direction": "The beef creature stands still as the steak cooks in the hot pan, releasing rising steam.",
+      "placeholderIds": ["@entity1", "@entity2", "@entity3", "@entity4"],
+      "evidenceIds": ["storyboard-1"],
+      "boundaryAfter": "none",
+      "safeContinuationPoints": [],
+      "startContinuity": {
+        "entities": "@entity1 standing upright with arms at sides",
+        "objects": "@entity3 resting in @entity2 with faint steam",
+        "camera": "Static eye-level vertical shot",
+        "audio": "Gentle skillet sizzle"
+      },
+      "endContinuity": {
+        "entities": "@entity1 stationary facing camera",
+        "objects": "@entity3 sizzling in @entity2 with white vapor rising",
+        "camera": "Static eye-level vertical shot",
+        "audio": "Skillet sizzle and fireplace crackle"
+      }
+    }
+  ],
+  "canonicalPrompt": "Vertical medium shot of an anthropomorphic raw marbled roast standing on a wooden kitchen counter beside a black cast-iron pan in front of a warm fireplace. The meat creature crouches and deposits a thick round raw steak slice into the pan, which begins to smoke and sizzle as the creature stands proudly beside it.",
+  "evidence": [
+    {
+      "id": "storyboard-1",
+      "atSeconds": 0,
+      "kind": "frame",
+      "artifactId": "video:Phoyg-JRsAWdOVdlQhn_0",
+      "description": "Single chronological storyboard containing 13 timestamped frames at 0, 0.669, 1.339, 2.008, 2.678, 3.347, 4.017, 4.686, 5.356, 6.025, 6.694, 7.364, 8.033 seconds. The source video itself is 8.033 seconds."
+    }
+  ],
+  "verification": {
+    "status": "verified",
+    "confidence": 0.98,
+    "issues": [],
+    "repaired": false
+  }
+}
